@@ -89,11 +89,12 @@ window.MapBrowser = function (args) {
 	    var li = $('<li>').attr('id', point);
 
 	    var that = this;
-	    li.hoverIntent({out: function() {}, 
-			    over: mkShowPointFun(point),
-			    timeout: MIN_HOVER_TIME});
 	    var searchtxt = encodeURIComponent(point);
 	    li.append($('<p>').append($('<a>').attr('href', 'http://www.google.com/search?q='+searchtxt).text(point)));
+	    li.find('a').hoverIntent({out: function() {}, 
+			    over: mkShowPointFun(point),
+			    timeout: MIN_HOVER_TIME});
+
 	    $('#list'+j).append(li);
 	}
 	if (this.points.length > 0) {
