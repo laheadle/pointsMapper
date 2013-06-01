@@ -1,7 +1,7 @@
 var jade = require('jade'),
 fs = require('fs');
 
-var fnames = ['bay-area-cities', 'big-california-cities', 'rhine-cities'];
+var fnames = ['bay-area-cities', 'big-california-cities', 'rhine-cities', 'east-bay-nature-sites'];
 
 for (var i = 0;i< fnames.length;i++) {
     var fname = './'+fnames[i]+'.jade';

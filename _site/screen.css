@@ -1,0 +1,41 @@
+#left {
+  float: left;
+}
+
+#messages {
+    height: 30px;
+    width: 700px;
+    position: fixed;
+    top: 10px;
+    right: 25px;
+}
+
+#content {
+    width: 900px;
+    height: 100%;
+    float: left;
+    position: fixed;
+    top: 30px;
+    right: 25px;
+}
+
+.list {
+    border-right: 1px solid black;
+
+    width: 150px;
+    padding: 0 20px;
+    float: left;
+}
+
+ul.list { list-style-type: none; }
+
+a:visited {
+    color: blue;
+}
+
+#map_canvas, #map_canvas2, #map_canvas3 {
+    height: 90%;
+    margin: 20px 0;
+}
+
+.quote { border: 1px solid gray; background-color: ivory; }
